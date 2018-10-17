@@ -8,7 +8,16 @@ get '/secret' do
   'This is a secret page'
 end
 
- get '/cat' do
+ get '/random-cat' do
   @name = "Oscar"
   erb(:index)
 end
+
+get '/named-cat' do
+  p params
+  @name = params[:name]
+  erb :index
+
+end
+
+  
