@@ -9,5 +9,6 @@ get '/secret' do
 end
 
  get '/cat' do
+  @name = "Oscar"
   erb(:index)
 end
